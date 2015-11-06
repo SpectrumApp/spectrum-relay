@@ -17,6 +17,8 @@ type Message struct {
     Message   string    `json:"message"`
 }
 
+const version_number = "v0.0.1"
+
 
 func post_message(endpoint *string, level *string, sublevel *string, message string){
     m := Message{time.Now(), *level, *sublevel, message}
@@ -38,11 +40,16 @@ func post_message(endpoint *string, level *string, sublevel *string, message str
 // The simplest use of a Scanner, to read standard input as a set of lines.
 
 func main() {
-    level := flag.String("level", "INFO", "level")
-    sublevel := flag.String("sublevel", "user", "sublevel")
-    endpoint := flag.String("endpoint", "http://127.0.0.1:9000", "endpoint")
+    version := flag.Bool("version", false, "print out the current version")
+    level := flag.String("level", "INFO", "level. Default: INFO")
+    sublevel := flag.String("sublevel", "user", "sublevel. Default: user")
+    endpoint := flag.String("endpoint", "http://127.0.0.1:9000", "endpoint. Default: http://127.0.0.1:9000")
     flag.Parse()
 
+    if *version == true {
+        fmt.Println(version_number)
+        return
+    }
     scanner := bufio.NewScanner(os.Stdin)
     for scanner.Scan() {
         post_message(endpoint, level, sublevel, scanner.Text())

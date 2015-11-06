@@ -3,7 +3,7 @@
 Usage:
 
 ```
-$ myprocess | relay [--level <LEVEL>]  [--sublevel <sublevel>]  [--endpoint <endpoint>]
+$ myprocess | relay [--level <LEVEL>]  [--sublevel <sublevel>]  [--endpoint <endpoint>] [--version]
 
 ```
 
@@ -12,6 +12,7 @@ options:
 * `--level` Default: `INFO`
 * `--sublevel` Default: `user`
 * `--endpoint` Default: `http://127.0.0.1:9000`
+* `--version` Prints out the current version and exits
 
 ### Quick Testing
 
