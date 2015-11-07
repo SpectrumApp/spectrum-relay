@@ -1,1 +1,2 @@
+bumpversion==0.5.3
 fake-factory==0.5.3
