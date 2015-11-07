@@ -20,7 +20,7 @@ type Message struct {
 const version_number = "v0.0.1"
 
 
-func post_message(endpoint *string, level *string, sublevel *string, message string){
+func post_message(endpoint, level, sublevel *string, message string){
     m := Message{time.Now(), *level, *sublevel, message}
     b, err := json.Marshal(m)
     if err != nil {
