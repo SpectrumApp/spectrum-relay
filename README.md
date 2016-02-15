@@ -21,7 +21,7 @@ options:
 
 ### Making a release
 
-Making a releae requires having correctly set your `$GOPATH` variable and diretory structure according to https://golang.org/doc/code.html. It assumes the current directory is at `$GOPATH/src/github.com/SpectrumApp/spectrum-relay` or symlinked there.
+Making a release requires having correctly set your `$GOPATH` variable and directory structure according to https://golang.org/doc/code.html. It assumes the current directory is at `$GOPATH/src/github.com/SpectrumApp/spectrum-relay` or symlinked there.
 
 It requires `goxc` and `bumpversion`
 
