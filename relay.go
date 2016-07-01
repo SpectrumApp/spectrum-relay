@@ -43,7 +43,7 @@ func main() {
     version := flag.Bool("version", false, "print out the current version")
     level := flag.String("level", "INFO", "level. Default: INFO")
     sublevel := flag.String("sublevel", "user", "sublevel. Default: user")
-    endpoint := flag.String("endpoint", "http://127.0.0.2:9000", "endpoint. Default: http://127.0.0.2:9000")
+    endpoint := flag.String("endpoint", "http://127.0.0.1:9000", "endpoint. Default: http://127.0.0.1:9000")
     flag.Parse()
 
     if *version == true {
