@@ -17,7 +17,7 @@ type Message struct {
     Message   string    `json:"message"`
 }
 
-const version_number = "v0.0.2"
+const version_number = "v0.0.3"
 
 
 func post_message(endpoint, level, sublevel *string, message string){
