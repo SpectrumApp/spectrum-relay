@@ -1,5 +1,9 @@
 # spectrum-relay
 
+## UPATE
+
+Spectrum is no longer in active development.  If you have any questions or concerns please contact us at https://revsys.com
+
 Usage:
 
 ```
